@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/rl_share">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="#e6e6e6">
+
+
+        <LinearLayout
+            android:id="@+id/ll_share_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <com.example.umonekeyshare.UMImageButtonShareItem
+                android:id="@+id/wechat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/umeng_socialize_wechat"
+                android:text="微信" >
+            </com.example.umonekeyshare.UMImageButtonShareItem>
+
+
+            <com.example.umonekeyshare.UMImageButtonShareItem
+                android:id="@+id/wechat_circle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/umeng_socialize_wxcircle"
+                android:text="微信朋友圈" >
+            </com.example.umonekeyshare.UMImageButtonShareItem>
+
+
+            <com.example.umonekeyshare.UMImageButtonShareItem
+                android:id="@+id/qq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/umeng_socialize_qq_on"
+                android:text="QQ好友" >
+            </com.example.umonekeyshare.UMImageButtonShareItem>
+
+
+            <com.example.umonekeyshare.UMImageButtonShareItem
+                android:id="@+id/qzone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/umeng_socialize_qzone_on"
+                android:text="QQ空间" >
+            </com.example.umonekeyshare.UMImageButtonShareItem>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_share_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_share_top"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal">
+
+
+            <com.example.umonekeyshare.UMImageButtonShareItem
+                android:id="@+id/sina"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/umeng_socialize_sina_on"
+                android:text="新浪" >
+            </com.example.umonekeyshare.UMImageButtonShareItem>
+
+
+            <com.example.umonekeyshare.UMImageButtonShareItem
+                android:id="@+id/other"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/umeng_socialize_twitter"
+                android:text="其他" >
+            </com.example.umonekeyshare.UMImageButtonShareItem>
+
+
+            <com.example.umonekeyshare.UMImageButtonShareItem
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            </com.example.umonekeyshare.UMImageButtonShareItem>
+
+
+            <com.example.umonekeyshare.UMImageButtonShareItem
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            </com.example.umonekeyshare.UMImageButtonShareItem>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_share_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_share_bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/um_share_btn_line"/>
+
+
+            <Button
+                android:id="@+id/share_other_copyurl"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/um_share_btn_bg"
+                android:text="copyurl"
+                android:textColor="@color/um_share_btn_text_color"
+                android:textSize="@dimen/um_share_other_btn_text_size" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/um_share_btn_line" />
+
+
+            <Button
+                android:id="@+id/share_other_open"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/um_share_btn_bg"
+                android:text="other_open"
+                android:textColor="@color/um_share_btn_text_color"
+                android:textSize="@dimen/um_share_other_btn_text_size" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/um_share_btn_line" />
+
+
+            <Button
+                android:id="@+id/share_other_reload"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/um_share_btn_bg"
+                android:text="reload"
+                android:textColor="@color/um_share_btn_text_color"
+                android:textSize="@dimen/um_share_other_btn_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

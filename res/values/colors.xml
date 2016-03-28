@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="um_share_textcolor">#333333</color>
+    <color name="um_share_btn_bg">#0000FF</color>
+    <color name="um_share_btn_text_color">#FF0000</color>
+    <color name="um_share_btn_line">#000000</color>
+
+</resources>
